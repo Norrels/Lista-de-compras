@@ -5,27 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de compras</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    
 </head>
 
 <body>
-    <p id="paragrafo">Você digitou: </p>
-    <p id="outroParagrafo">Outro P</p>
+    <div class="container">
+        <h1>Lista de compras</h1>
+        <p class="subtitle">Facilite sua ida ao supermercado!</p>
 
-    <button onclick="alert('Salvo com sucesso!')">Salvar</button>
+        <div class="form">
+            <input type="text" placeholder="Digite o nome do item">
+            <input type="number" placeholder="Qtd" min="1">
+            <button>Adicionar Item</button>
+        </div>
 
-    <button onclick="alterarP()">Clique aqui para alterar o texto do primerio P</button>
+        <ul class="lista"><li>Item</li></ul>
 
-    <br>
-
-    <h2>Lista de Habitos saudaveis</h2>
-    <ol id="lista" >
-        <li>Beber água</li>
-        <li>Dormir Bem</li>
-        <li>Comer Frutas</li>
-        <li>Praticar atividades físicas</li>
-    </ol>
-
-    <button onclick="adicionarHabito()">Adicionar Hábito</button>
+        <div class="actions">
+            <button class="clean">Limpar lista</button>
+            <button class="clean-buy">Limpar comprados</button>
+        </div>
+    </div>
 
     <script src="script/script.js"></script>
 </body>
